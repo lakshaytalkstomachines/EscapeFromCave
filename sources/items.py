@@ -16,7 +16,7 @@ class Weapon:
 class Rock(Weapon):
     def __init__(self):
         self.name = "Rock"
-        self.description = "A fist sized rock, suitable fro bludgeoning."
+        self.description = "A fist-sized rock, suitable for bludgeoning."
         self.damage = 5
         self.value = 1
 
