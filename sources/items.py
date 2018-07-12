@@ -28,6 +28,16 @@ class Dagger(Weapon):
                            "Somewhat more dangerous than a rock."
         self.damage = 10
         self.value = 15
+        
+        
+        
+class NewSword(Weapon):
+    def __init__(self):
+        self.name = "New Sword"
+        self.description = "This sword is looks amazing," \
+                           " but not very practical. "
+        self.damage = 15
+        self.value = 100
 
 
 class RustySword(Weapon):
