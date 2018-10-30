@@ -7,7 +7,7 @@ __author__ = "lakshaytalkstocomputer"
 
 class Weapon:
     def __init__(self):
-        raise NotImplementedError("Dop not create raw Weapon objects.")
+        raise NotImplementedError("Do not create raw Weapon objects.")
 
     def __str__(self):
         return self.name
@@ -16,7 +16,7 @@ class Weapon:
 class Rock(Weapon):
     def __init__(self):
         self.name = "Rock"
-        self.description = "A fist sized rock, suitable fro bludgeoning."
+        self.description = "A fist-sized rock, suitable for bludgeoning."
         self.damage = 5
         self.value = 1
 
