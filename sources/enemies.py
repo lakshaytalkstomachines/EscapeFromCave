@@ -42,3 +42,10 @@ class RockMonster(Enemy):
         self.name = "Rock Monster"
         self.hp = 80
         self.damage = 15
+        
+class Mammoth(Enemy):
+    def __init__(self):
+       self.name = "Mighty Mammoth"
+       self.hp = 180
+       self.damage = 12
+    
