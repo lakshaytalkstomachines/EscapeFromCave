@@ -6,6 +6,7 @@ __author__ = "lakshaytalkstocomputer"
 
 
 import world
+import items
 from player import Player
 from collections import OrderedDict
 
@@ -35,6 +36,8 @@ def get_available_actions(room, player):
         action_adder(actions, 't', player.trade, "Trade")
     if isinstance(room, world.EnemyTile) and room.enemy.is_alive():
         action_adder(actions, 'a', player.attack, "Attack")
+        if any([issubclass(type(i), items.Consumable) for i in player.inventory]):
+            action_adder(actions, 'h', player.heal, "Heal")
     else:
         if world.tile_at(room.x, room.y - 1):
             action_adder(actions, 'n', player.move_north, "Go North")
