@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """ Text adventure game
     @insta = @lakshaytalkstocomputer
     @year  = 2018
