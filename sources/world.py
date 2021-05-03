@@ -1,8 +1,4 @@
-""" Text adventure game
-    @insta = @lakshaytalkstocomputer
-    @year  = 2018
-"""
-__author__ = "lakshaytalkstocomputer"
+
 
 import random
 import enemies
@@ -69,11 +65,15 @@ class EnemyTile(MapTile):
             self.alive_text = "You hear a squeaking noise growing louder" \
                               "...suddenly you are lost in a swarm of bats!"
             self.dead_text = "Dozens of dead bats are scattered on the ground"
+        elif r == 3:
+            self.enemy = enimies.elictricity_dragon()
+            self.alive_text = "a weird object swoops bye you are in  the electic city"
+            self.dead_text = "it explods you just won!!!!!!!!!!"
         else:
             self.enemy = enemies.RockMonster()
             self.alive_text = "You have disturbed a rock monster from his slumber! "
             self.dead_text = "Defeated, the monster has reverted into an ordinary rock"
-
+        
         super().__init__(x, y)
 
     def intro_text(self):
