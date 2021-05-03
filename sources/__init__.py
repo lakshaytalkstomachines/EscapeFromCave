@@ -1,5 +1,5 @@
-""" Text adventure game 
-    @insta = @lakshaytalkstocomputer
-    @year  = 2018
-"""
-__author__ = "lakshaytalkstocomputer"
+ Text adventure game = {
+    "langauge" : "python",
+    "year"  : 2021
+ }
+__author__ = "Adrian"
