@@ -1,8 +1,4 @@
-""" Text adventure game
-    @insta = @lakshaytalkstocomputer
-    @year  = 2018
-"""
-__author__ = "lakshaytalkstocomputer"
+
 
 
 class Enemy:
@@ -21,7 +17,7 @@ class GiantSpider(Enemy):
         self.name = " Giant Spider"
         self.hp = 10
         self.damage = 2
-
+        self.agresive_level = 3 #from 1 - 3
 
 class Ogre(Enemy):
     def __init__(self):
@@ -35,6 +31,7 @@ class BatColony(Enemy):
         self.name = "Colony of Bats"
         self.hp = 100
         self.damage = 4
+        self.agresive_level = 2 #from 1 - 3
 
 
 class RockMonster(Enemy):
@@ -42,3 +39,23 @@ class RockMonster(Enemy):
         self.name = "Rock Monster"
         self.hp = 80
         self.damage = 15
+        self.agresive_level = 3 #from 1 - 3
+        
+class sheep(Enemy):
+    def __init__(self):
+        self.name = "Rock Monster"
+        self.hp = 10
+        self.damage = 0
+        self.agresive_level = 1 #from 1 - 3
+class cow(Enemy):
+    def __init__(self):
+        self.name = "Rock Monster"
+        self.hp = 15
+        self.damage = 0
+        self.agresive_level = 1 #from 1 - 3
+class electicity_dragon(Enemy):
+    def __init__(self):
+        self.name = "Rock Monster"
+        self.hp = 300
+        self.damage = 50
+        self.agresive_level = 3 #from 1 - 3
